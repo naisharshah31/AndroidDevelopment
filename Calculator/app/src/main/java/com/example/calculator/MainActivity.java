@@ -83,6 +83,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             toast.show();
         } else {
 
+            float ans = 0;
+
+
+            if (option == "+") {
+                ans = Float.parseFloat(number1) + Float.parseFloat(number2);
+                answer.setText( Float.toString(ans) );
+            } else if ( option == "-" ) {
+                ans = Float.parseFloat(number1) - Float.parseFloat(number2);
+                answer.setText( Float.toString(ans) );
+            } else if ( option == "*" ) {
+                ans = Float.parseFloat(number1) * Float.parseFloat(number2);
+                answer.setText( Float.toString(ans) );
+            } else if ( option == "/" ) {
+                ans = Float.parseFloat(number1) / Float.parseFloat(number2);
+                answer.setText( Float.toString(ans) );
+            }
+
         }
 
 
