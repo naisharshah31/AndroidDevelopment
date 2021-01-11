@@ -2,11 +2,14 @@
     <string name="app_name">Calculator</string>
     <string name="number1">0</string>
     <string name="number2">0</string>
+    <string name="button_label_calculate">Calculate</string>
+    <string name="answer_placeholder_label">Answer :</string>
 
-    <string-array name="operation">
-        <item>+</item>
-        <item>-</item>
-        <item>*</item>
-        <item>/</item>
-    </string-array>
+    <!--    <string-array name="operation">-->
+<!--        <item>+</item>-->
+<!--        <item>-</item>-->
+<!--        <item>*</item>-->
+<!--        <item>/</item>-->
+<!--    </string-array>-->
+
 </resources>

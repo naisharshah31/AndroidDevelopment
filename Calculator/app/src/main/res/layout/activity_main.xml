@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/black"
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <EditText
         android:id="@+id/number2"
-        android:layout_width="138dp"
-        android:layout_height="0dp"
+        android:layout_width="137dp"
+        android:layout_height="46dp"
         android:layout_marginTop="112dp"
+        android:background="@drawable/textview_border"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="@string/number1"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.941"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,24 +29,67 @@
         android:layout_width="119dp"
         android:layout_height="48dp"
         android:layout_marginTop="112dp"
+        android:background="@drawable/textview_border"
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="@string/number2"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/operation"
-        android:layout_width="77dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="125dp"
-        android:layout_marginEnd="177dp"
-        android:layout_marginBottom="586dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/option_spinner"
+        android:layout_width="92dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="124dp"
+        android:background="@drawable/textview_border"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:backgroundTint="@color/purple_700"
+        android:text="@string/button_label_calculate"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="calculate" />
+
+    <TextView
+        android:id="@+id/label_answer"
+        android:layout_width="93dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="368dp"
+        android:text="@string/answer_placeholder_label"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="145dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="116dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
