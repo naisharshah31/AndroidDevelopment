@@ -54,10 +54,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        //String item = parent.getItemAtPosition(position).toString();
-        //Toast.makeText(parent.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
         // TODO Auto-generated method stub
-
     }
 
     @Override
@@ -71,10 +68,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         String number1 = number1_input.getText().toString();
         String number2 = number2_input.getText().toString();
 
-        /*Toast toast = Toast.makeText(this, (number1 + number2),
-                Toast.LENGTH_LONG);
 
-        toast.show();*/
 
         //VALIDATION
         if ( number1.matches("") || number2.matches("") ) {
