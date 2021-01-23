@@ -1,5 +1,7 @@
 package com.example.detailslab6;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -11,8 +13,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuthException;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import static java.lang.Boolean.*;
 
@@ -25,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox optionSurat, optionBangalore, optionMysore, optionDelhi;
     private Button submit;
     private int flag;
+    private String dbAge, dbCities;
+
 
 
 
@@ -57,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
                 StringBuffer displayMsg = new StringBuffer();
                 displayMsg.append("Username: ");
                 flag = 0;
-                String dbAge = "", dbCities = "";
+                dbAge = "";
+                dbCities = "";
 
                 String user = username.getText().toString();
 
@@ -68,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(MainActivity.this, "Please enter username",
                             Toast.LENGTH_LONG);
                     toast.show();
+                    return;
                 } else {
                     displayMsg.append(user).append("\n");
                 }
@@ -82,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(MainActivity.this, "Please enter age",
                             Toast.LENGTH_LONG);
                     toast.show();
+                    return;
                 } else {
                     displayMsg.append("Age Group: ");
                     displayMsg.append(ageOption.getText()).append("\n");
@@ -95,6 +106,7 @@ public class MainActivity extends AppCompatActivity {
                     Toast toast = Toast.makeText(MainActivity.this, "Please select at least one city",
                             Toast.LENGTH_LONG);
                     toast.show();
+                    return;
                 } else {
                     displayMsg.append("Preferred City: ");
                     if(optionSurat.isChecked()){
@@ -117,12 +129,35 @@ public class MainActivity extends AppCompatActivity {
 
                 //FINAL DISPLAY MESSAGE if there is no error and if every criteria is satisfied flag value is 0.
                 if (flag == 0) {
-                    Toast.makeText(MainActivity.this, displayMsg,Toast.LENGTH_SHORT).show();
                     UserHelperClass helperClass = new UserHelperClass(user, dbAge, dbCities);
-                    reference.child(user).setValue(helperClass);
+
+                    //Checking whether username exists in database or not.
+                    reference.orderByChild("username").equalTo(user).addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            if(snapshot.exists()){
+                                //IF username exists then break control
+                                Toast.makeText(MainActivity.this, "Sorry! Username already exists!",Toast.LENGTH_SHORT).show();
+                                return;
+                            } else {
+                                //Else INSERT IN FIREBASE..
+                                reference.child(user).setValue(helperClass, new DatabaseReference.CompletionListener() {
+                                    @Override
+                                    public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
+                                        Toast.makeText(MainActivity.this, "Welcome! " + user,Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError error) {
+
+                        }
+
+
+                    });
                 }
-
-
             }
         });
     }
