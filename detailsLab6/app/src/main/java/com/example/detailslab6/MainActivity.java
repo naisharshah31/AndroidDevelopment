@@ -11,6 +11,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import static java.lang.Boolean.*;
 
 
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox optionSurat, optionBangalore, optionMysore, optionDelhi;
     private Button submit;
     private int flag;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,9 +49,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                // Write a message to the database
+                FirebaseDatabase database = FirebaseDatabase.getInstance();
+                DatabaseReference reference = database.getReference("users");
+
+
                 StringBuffer displayMsg = new StringBuffer();
                 displayMsg.append("Username: ");
                 flag = 0;
+                String dbAge = "", dbCities = "";
 
                 String user = username.getText().toString();
 
@@ -61,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
                     displayMsg.append(user).append("\n");
                 }
 
+                //This function return -1 if no radio button is selected in that group
                 int radioID = ageGroup.getCheckedRadioButtonId();
                 ageOption = findViewById(radioID);
 
@@ -73,7 +85,9 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     displayMsg.append("Age Group: ");
                     displayMsg.append(ageOption.getText()).append("\n");
+                    dbAge =  ageOption.getText().toString();
                 }
+
 
                 //VALIDATION
                 if (optionSurat.isChecked() == FALSE && optionBangalore.isChecked() == FALSE && optionMysore.isChecked() == FALSE && optionDelhi.isChecked() == FALSE) {
@@ -85,21 +99,27 @@ public class MainActivity extends AppCompatActivity {
                     displayMsg.append("Preferred City: ");
                     if(optionSurat.isChecked()){
                         displayMsg.append(optionSurat.getText());
+                        dbCities += optionSurat.getText();
                     }
                     if(optionBangalore.isChecked()){
                         displayMsg.append(", ").append(optionBangalore.getText());
+                        dbCities += ", " + optionBangalore.getText();
                     }
                     if(optionMysore.isChecked()){
                         displayMsg.append(", ").append(optionMysore.getText());
+                        dbCities += ", " + optionMysore.getText();
                     }
                     if(optionDelhi.isChecked()){
                         displayMsg.append(", ").append(optionDelhi.getText());
+                        dbCities += ", " + optionDelhi.getText();
                     }
                 }
 
-                //FINAL DISPLAY MESSAGE
+                //FINAL DISPLAY MESSAGE if there is no error and if every criteria is satisfied flag value is 0.
                 if (flag == 0) {
                     Toast.makeText(MainActivity.this, displayMsg,Toast.LENGTH_SHORT).show();
+                    UserHelperClass helperClass = new UserHelperClass(user, dbAge, dbCities);
+                    reference.child(user).setValue(helperClass);
                 }
 
 
