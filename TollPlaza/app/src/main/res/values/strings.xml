@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TollPlaza</string>
+    <string name="toll_fee_collector">Toll Fee Collector</string>
+    <string name="no_of_vehicles">No of Vehicles</string>
+    <string name="amt_collected">Amt Collected</string>
+    <string name="_0">0</string>
+    <string name="_2_nwheeler">2 \nWheeler</string>
+    <string name="_4_nwheeler">4 \nWheeler</string>
+    <string name="rfid">RFID</string>
+    <string name="truck_n_bus">Truck / \n Bus</string>
+    <string name="vip_n_pass">VIP / \n Pass</string>
+</resources>
