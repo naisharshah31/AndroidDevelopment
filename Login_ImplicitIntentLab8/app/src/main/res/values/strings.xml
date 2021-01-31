@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Login_ImplicitIntentLab8</string>
+    <string name="login_to_your_account">Login to your Account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="features">Features</string>
+    <string name="phone_call">Phone Call</string>
+</resources>
