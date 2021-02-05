@@ -93,16 +93,19 @@ public class MainActivity extends AppCompatActivity {
 
     void setColor() {
 
-        if(iscolor)
-        {
-            mLayout.setBackgroundColor(Color.GRAY);
-            iscolor = false;
-        }
-        else
-        {
-            mLayout.setBackgroundColor(Color.WHITE);
-            iscolor = true;
-        }
+        AmbilWarnaDialog ambilWarnaDialog = new AmbilWarnaDialog(this, defaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
+            @Override
+            public void onCancel(AmbilWarnaDialog dialog) {
+
+            }
+
+            @Override
+            public void onOk(AmbilWarnaDialog dialog, int color) {
+                defaultColor = color;
+                mLayout.setBackgroundColor(defaultColor);
+            }
+        });
+        ambilWarnaDialog.show();
 
     }
 
@@ -125,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+
 
 
     //Closes the App: Closing current activity
