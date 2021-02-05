@@ -2,13 +2,13 @@ package com.example.menulab9;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ShareCompat;
 import androidx.core.content.ContextCompat;
 
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     TextInputEditText mMainMessage, mPhoneNumber;
     RelativeLayout mLayout;
     int defaultColor;
+    boolean iscolor = true;
 
 
     @Override
@@ -92,25 +93,27 @@ public class MainActivity extends AppCompatActivity {
 
     void setColor() {
 
-        AmbilWarnaDialog ambilWarnaDialog = new AmbilWarnaDialog(this, defaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
-            @Override
-            public void onCancel(AmbilWarnaDialog dialog) {
-
-            }
-
-            @Override
-            public void onOk(AmbilWarnaDialog dialog, int color) {
-                defaultColor = color;
-                mLayout.setBackgroundColor(defaultColor);
-            }
-        });
-        ambilWarnaDialog.show();
+        if(iscolor)
+        {
+            mLayout.setBackgroundColor(Color.GRAY);
+            iscolor = false;
+        }
+        else
+        {
+            mLayout.setBackgroundColor(Color.WHITE);
+            iscolor = true;
+        }
 
     }
 
     void whatsappSend() {
         String message = mMainMessage.getText().toString();
         String number = mPhoneNumber.getText().toString();
+
+        if (number.matches("") || (number.length() != 10) ) {
+            Toast.makeText(MainActivity.this, "Please enter valid number", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         boolean installed = appInstalledOrNot("com.whatsapp");
         if (installed) {
