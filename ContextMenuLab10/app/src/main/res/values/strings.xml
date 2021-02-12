@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ContextMenuLab10</string>
     <string name="cities">Cities</string>
+    <string name="delhi">Delhi</string>
 </resources>
