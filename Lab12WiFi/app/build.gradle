@@ -7,8 +7,8 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.contextmenulab10"
-        minSdkVersion 22
+        applicationId "com.example.lab12wifi"
+        minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -31,7 +31,6 @@ android {
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'androidx.support:design:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     testImplementation 'junit:junit:4.+'
