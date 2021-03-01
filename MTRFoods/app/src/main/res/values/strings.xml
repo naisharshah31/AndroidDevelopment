@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MTRFoods</string>
+    <string name="login_to_your_account">Login to your Account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tab_text_1">Veg</string>
+    <string name="tab_text_2">Non Veg</string>
+    <string name="tab_text_3">Contact Us</string>
+</resources>
