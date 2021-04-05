@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button mBtnWiFi;
     boolean WiFiStatus;
-
     String val;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

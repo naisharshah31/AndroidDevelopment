@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CAT2</string>
+    <string name="reset" />
+    <string name="login" />
+    <string name="enter_password" />
+    <string name="password" />
+    <string name="enter_username" />
+    <string name="username" />
+    <string name="welcome" />
+</resources>

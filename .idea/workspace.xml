@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="49e1943e-8d88-4224-9ae3-3950c23a817d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/androidTest/java/com/example/lab14fragments/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/java/com/example/lab14fragments/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/java/com/example/lab14fragments/chatFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/java/com/example/lab14fragments/ui/main/PageViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/java/com/example/lab14fragments/ui/main/PlaceholderFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/java/com/example/lab14fragments/ui/main/SectionsPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/layout/chat_fragment_layout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/layout/fragment_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/values-w820dp/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/app/src/test/java/com/example/lab14fragments/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lab14Fragments/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivitiesIntent/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ActivitiesIntent/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivitiesIntent/app/src/main/java/com/example/activitiesintent/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ActivitiesIntent/app/src/main/java/com/example/activitiesintent/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActivitiesIntent/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ActivitiesIntent/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContextMenuLab10/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ContextMenuLab10/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContextMenuLab10/app/src/main/java/com/example/contextmenulab10/citiesFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContextMenuLab10/app/src/main/res/drawable/globe.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContextMenuLab10/app/src/main/res/layout/city_fragment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContextMenuLab10/app/src/main/res/layout/nav_header.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContextMenuLab10/app/src/main/res/menu/hamburger_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContextMenuLab10/app/src/main/res/mipmap-anydpi-v26/profile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ContextMenuLab10/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ContextMenuLab10/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImplicitIntent/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ImplicitIntent/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImplicitIntent/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ImplicitIntent/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab12WiFi/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lab12WiFi/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab12WiFi/app/src/main/java/com/example/lab12wifi/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab12WiFi/app/src/main/java/com/example/lab12wifi/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_ImplicitIntentLab8/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Login_ImplicitIntentLab8/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Login_ImplicitIntentLab8/app/src/main/java/com/example/login_implicitintentlab8/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Login_ImplicitIntentLab8/app/src/main/java/com/example/login_implicitintentlab8/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MenuLab9/app/src/main/java/com/example/menulab9/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/MenuLab9/app/src/main/java/com/example/menulab9/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScrollingText/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ScrollingText/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TollPlaza/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TollPlaza/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1p0OdkwvfzbqwjbebfHUz2sM2QQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49e1943e-8d88-4224-9ae3-3950c23a817d" name="Default Changelist" comment="" />
+      <created>1614316630636</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614316630636</updated>
+    </task>
+    <servers />
+  </component>
+</project>

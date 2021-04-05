@@ -29,6 +29,12 @@ public class MainActivity extends AppCompatActivity {
         mReplyHeadTextView = findViewById(R.id.text_header_reply);
         mReplyTextView = findViewById(R.id.text_message_reply);
 
+
+
+        //To focus this widget when this activity is loaded..
+        mMessageEditText.setFocusableInTouchMode(true);
+        mMessageEditText.requestFocus();
+
     }
 
     @Override

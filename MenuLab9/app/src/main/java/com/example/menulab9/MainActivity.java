@@ -26,11 +26,10 @@ import yuku.ambilwarna.AmbilWarnaDialog;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    //Declaration
     TextInputEditText mMainMessage, mPhoneNumber;
     RelativeLayout mLayout;
     int defaultColor;
-    boolean iscolor = true;
 
 
     @Override
@@ -38,8 +37,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Initialization
         mMainMessage = findViewById(R.id.main_textbox);
         mPhoneNumber = findViewById(R.id.phone_number);
+
 
         mLayout = findViewById(R.id.layout);
         defaultColor = ContextCompat.getColor(MainActivity.this, R.color.design_default_color_primary);
@@ -78,6 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Share intent to share the content and open share tray!
     void share() {
         String txt = mMainMessage.getText().toString();
         String mimeType = "text/plain";
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 .startChooser();
     }
 
-
+    //Color Picker
     void setColor() {
 
         AmbilWarnaDialog ambilWarnaDialog = new AmbilWarnaDialog(this, defaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
@@ -109,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    //Whatsapp intent to share data from our app to whatsapp!
     void whatsappSend() {
         String message = mMainMessage.getText().toString();
         String number = mPhoneNumber.getText().toString();
@@ -136,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
             finish();
     }
 
+    //Checking whether the app is installed or not!
     private boolean appInstalledOrNot(String url) {
         PackageManager packageManager = getPackageManager();
         boolean app_installed;

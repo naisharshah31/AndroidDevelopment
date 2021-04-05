@@ -1,4 +1,6 @@
 package com.example.lab14fragments;
 
-public class chatFragment {
+import androidx.fragment.app.Fragment;
+
+public class chatFragment extends Fragment {
 }

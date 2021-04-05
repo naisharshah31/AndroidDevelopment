@@ -14,6 +14,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 public class MainActivity extends AppCompatActivity {
 
+    //Decaleration
     private final String user = "naishar_shah", pass = "naishar";
     private Button mLogin;
     private TextInputEditText mUsername , mPassword;
